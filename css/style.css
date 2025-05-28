@@ -327,22 +327,29 @@ button[type="submit"]:hover {
 
 footer {
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "nav"
+        "info"
+        "logo";
     text-align: center;
     background-color: #e7c6f0;
     padding: 2rem;
     gap: 2rem;
-    flex-wrap: wrap;
-    color: #04a777;
 }
 
+/*Grid areas */
+
 .footer-navbar {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
-    gap: 2px;
+    gap: 0.5rem;
 }
 
 .footer-navbar li a {
-    font-size: 10;
+    font-size: 0.9rem;
     text-decoration: none;
     list-style: none;
     color: #04a777;
@@ -351,6 +358,9 @@ footer {
 
 
 .derechos-reservados {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
     color: #04a777;
     font-size: 12px;
     font-weight: 500;
@@ -358,46 +368,49 @@ footer {
 }
 
 .iconos-logo-container {
+    grid-area: logo;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+
 }
 
-.logo-caf {
-    width: 60px;
+.logo-caf img {
+    width: 80px;
     height: auto;
 }
 
 .logos-redes {
-    align-items: center;
-    margin-top: 10px;
+    display: flex;
+    gap: 2rem;
+    color: #04a777;
+
 }
-
-
 
 /*******************************************MEDIA QUERIES******************************/
 
-/**********************MEDIA QUERIES FOOTER ALL PAGES**********/
+/********************** MEDIA QUERIES de FOOTER ALL PAGES **********************/
 @media (min-width: 768px) {
     footer {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: none;
+        grid-template-areas: "nav info logo";
+        text-align: left;
+        align-items: start;
+    }
+    
+    .footer-navbar {
+        align-items: flex-start;
+    }
+
+    .derechos-reservados {
         text-align: left;
     }
+
+    .iconos-logo-container {
+        align-items: center;
+    }
 }
-
-.footer-navbar {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.footer-navbar a {
-    color: #04a777;
-    text-decoration: none;
-}
-
-
 
 /**********MEDIA QUERIES MAIN INDEX*************/
 @media screen and (max-width:890px) {
@@ -489,6 +502,7 @@ footer {
     .text-container-comunidad h1 {
         font-size: 2rem;
         margin-bottom: 1rem;
+        align-items: center;
     }
 
     .text-container-comunidad h2 {
@@ -510,4 +524,39 @@ footer {
         display: block;
         margin: 0 auto;
     }
+}
+
+/**********MEDIA QUERIES MAPA DE CANCHAS*************/
+@media screen and (max-width:890px) {
+    .main-section-mapas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .titulos-mapas {
+        text-align: center;
+    }
+
+    .titulos-mapas {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .titulos-mapas h2 {
+        font-size: 1rem;
+    }
+
+    .mapa-container {
+        width: 100%;
+    }
+
+    .mapa-container iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+    }
+
 }
