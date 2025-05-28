@@ -85,7 +85,7 @@ a[aria-current="page"] {
     margin-bottom: 20px;
 }
 
-/*****************Estilo del phone mockup*************/
+/*********************ESTILO DEL MOCKUP PHONE DEL INDEX*************/
 .phone-mockup-conteiner {
     display: flex;
     justify-content: center;
@@ -97,7 +97,7 @@ a[aria-current="page"] {
     width: 500px;
 }
 
-/**Estilo de botones*/
+/*************ESTILO DE BOTONES DEL INDEX********************/
 .buttons-container {
     display: flex;
     justify-content: center;
@@ -324,58 +324,190 @@ button[type="submit"]:hover {
 }
 
 /************************FOOTER ALL PAGES*********************************/
+
 footer {
+    display: grid;
+    grid-template-rows: auto auto auto;
     text-align: center;
-    margin: auto;
+    background-color: #e7c6f0;
+    padding: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    color: #04a777;
 }
 
 .footer-navbar {
     list-style: none;
-    display: flex;
-    justify-content: space-between;
     gap: 2px;
-    margin-left: 350px;
-    margin-right: 350px;
-    margin-bottom: 20px
 }
 
 .footer-navbar li a {
     font-size: 10;
     text-decoration: none;
+    list-style: none;
     color: #04a777;
     font-weight: 600;
 }
 
-.derechos-reservados p {
+
+.derechos-reservados {
     color: #04a777;
     font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.iconos-logo-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
+.logo-caf {
+    width: 60px;
+    height: auto;
+}
 
-/*******************************************MEDIA QUERIES***************************/
+.logos-redes {
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+
+/*******************************************MEDIA QUERIES******************************/
+
+/**********************MEDIA QUERIES FOOTER ALL PAGES**********/
+@media (min-width: 768px) {
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: none;
+        text-align: left;
+    }
+}
+
+.footer-navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-navbar a {
+    color: #04a777;
+    text-decoration: none;
+}
+
+
 
 /**********MEDIA QUERIES MAIN INDEX*************/
-
-@media screen and (max-width:813px) {
-        .content-wrapper {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .buttons-container {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .phone-mockup-container {
-            margin-top: 2rem;
-        }
-
-        .text-container h1,
-        .text-container h2 {
-            font-size: 1.5rem;
-        }
+@media screen and (max-width:890px) {
+    .main-section-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+        height: auto;
     }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .text-container {
+        max-width: 600px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .text-container h1 {
+        align-items: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .text-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+
+    }
+
+    .buttons-container a {
+        border-radius: 8px;
+        font-weight: 600;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .phone-mockup-conteiner {
+        width: 80%;
+        max-width: 300px;
+        margin-top: 2rem;
+    }
+
+    .phone-mockup {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/**********MEDIA QUERIES MAIN COMUNIDAD*************/
+@media screen and (max-width:890px) {
+    .who-section-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .content-wrapper-comunidad {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+
+    .text-container-comunidad {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 700px;
+    }
+
+    .text-container-comunidad h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .text-container-comunidad h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-container-comunidad p {
+        font-size: 1rem;
+    }
+
+    .equipo-container {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .equipo-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
