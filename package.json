@@ -1,0 +1,19 @@
+{
+  "name": "caf-bootsrap-sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinaFerguson/caf-bootsrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinaFerguson/caf-bootsrap/issues"
+  },
+  "homepage": "https://github.com/MartinaFerguson/caf-bootsrap#readme",
+  "description": ""
+}

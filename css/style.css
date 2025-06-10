@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,600;1,600&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*Reset CSS*/
 * {
@@ -9,24 +9,26 @@
 
 /***********************BODY******************************/
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Chakra Petch", sans-serif;
     font-style: normal;
     margin: 2%;
-    background-color: #d290e2;
+    background-image: url(../images/pelota.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment:scroll;
+
 
 }
 
 /*********************** BOOTSRAP NAVBAR ALL PAGES*****************************/
-header {
-    background-color: #e7c6f0;
-}
 
-.navbar-brand h3 {
-    font-family: "Poppins", sans-serif;
+.navbar-brand .titulo-header {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     color: #592E83;
     font-size: 80px;
     margin: 20px;
-
 }
 
 .navbar-collapse {
@@ -34,15 +36,16 @@ header {
 }
 
 li .nav-link {
-    color: #04a777;
+    color: #ebf1ef;
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
+
 }
 
 a[aria-current="page"] {
-    color: #592E83 !important;
+    color: #50168a !important;
     font-weight: 800;
-    border-bottom: 2px solid#04a777;
+    border-bottom: 2px solid#f2faf8;
 }
 
 
@@ -73,15 +76,15 @@ a[aria-current="page"] {
 
 .text-container h1 {
     text-align: justify;
-    font-size: 50px;
-    color: #592E83;
+    font-size: 80px;
+    color: #50168a;
     margin-bottom: 20px;
 
 }
 
 .text-container h2 {
     font-size: 35px;
-    color: #F44708;
+    color: #F09A05;
     margin-bottom: 20px;
 }
 
@@ -109,13 +112,21 @@ a[aria-current="page"] {
     text-decoration: none;
     list-style: none;
     font-size: 16px;
-    background-color: #0c7e6b;
+    font-weight: 500;
+    background-color: #db2b39;
     padding: 10px 20px;
     color: #f0f0f0;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     text-decoration: none;
+}
+
+.buttons-container a:hover {
+    transform: scale(1.05);
+    background-color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 /*****************************MAIN COMUNIDAD***************************/
@@ -326,71 +337,44 @@ button[type="submit"]:hover {
 /************************FOOTER ALL PAGES*********************************/
 
 footer {
-    display: grid;
-    grid-template-areas:
-        "nav"
-        "info"
-        "logo";
+
     text-align: center;
-    background-color: #e7c6f0;
     padding: 2rem;
     gap: 2rem;
+    background-color: #ebf1ef;
 }
 
-/*Grid areas */
-
 .footer-navbar {
-    grid-area: nav;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     list-style: none;
-    gap: 0.5rem;
+    padding: 0;
+    margin-bottom: 1rem;
+    gap: 1rem;
 }
 
 .footer-navbar li a {
     font-size: 0.9rem;
     text-decoration: none;
-    list-style: none;
-    color: #04a777;
+    color: #030c09;
     font-weight: 600;
 }
 
 
-.derechos-reservados {
-    grid-area: info;
-    display: flex;
-    flex-direction: column;
+.derechos-reservados p {
     color: #04a777;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
+    margin: 2px 0;
     text-align: center;
 }
 
-.iconos-logo-container {
-    grid-area: logo;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-
-}
-
-.logo-caf img {
-    width: 80px;
-    height: auto;
-}
-
-.logos-redes {
-    display: flex;
-    gap: 2rem;
-    color: #04a777;
-
-}
 
 /*******************************************MEDIA QUERIES******************************/
 
-/********************** MEDIA QUERIES de FOOTER ALL PAGES **********************/
+/********** MEDIA QUERIES de FOOTER ALL PAGES ***********/
 @media (min-width: 768px) {
     footer {
         grid-template-columns: 1fr 1fr 1fr;
@@ -398,7 +382,7 @@ footer {
         text-align: left;
         align-items: start;
     }
-    
+
     .footer-navbar {
         align-items: flex-start;
     }
