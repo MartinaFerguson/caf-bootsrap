@@ -4,10 +4,11 @@
 body {
   font-family: "Chakra Petch", sans-serif;
   font-style: normal;
-  margin: 2%;
   background-image: url(../images/pelota.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: scroll;
   /*******BOOTSRAP NAVBAR ALL PAGES**********/
   /********MAIN SECTION INDEX**************/
 }

@@ -1,0 +1,17 @@
+@mixin input-style {
+    padding: $padding-base;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    font-size: $font-base;
+}
+
+@mixin button-style {
+    background-color: $primary-color;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

@@ -51,61 +51,67 @@
     <!-----------------------------------------SECCIÓN PRINCIPAL-------------------------------->
     <main class="contacto-section">
         <section class="form-wrapper">
-            <h1>Dejanos tu consulta</h1>
+            <div data-aos="zoom-in">
+                <div class="glass-content">
+                    <h1>Dejanos tu consulta</h1>
+                    <form action="/submit" method="post" class="formulario-contacto">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required>
 
-            <form action="/submit" method="post" class="formulario-contacto">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" required>
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" name="correo" id="correo" required>
 
-                <label for="correo">Correo electrónico</label>
-                <input type="email" name="correo" id="correo" required>
+                        <label for="equipo">¿Tenés equipo?</label>
+                        <select name="equipo" id="equipo" required>
+                            <option value="">Seleccioná una opción</option>
+                            <option value="no">No, quiero sumarme a un equipo.</option>
+                            <option value="si">Sí, quiero registrarme con mi equipo.</option>
+                        </select>
 
-                <label for="equipo">¿Tenés equipo?</label>
-                <select name="equipo" id="equipo" required>
-                    <option value="">Seleccioná una opción</option>
-                    <option value="no">No, quiero sumarme a un equipo.</option>
-                    <option value="si">Sí, quiero registrarme con mi equipo.</option>
-                </select>
-
-                <label>¿Querés entrenar?</label>
-                <div class="radio-group">
-                    <label for="entrenar-si">
-                        <input type="radio" name="entrenar" id="entrenar-si" value="si" required>
-                        Sí
-                    </label>
-                    <label for="entrenar-no">
-                        <input type="radio" name="entrenar" id="entrenar-no" value="no">
-                        No
-                    </label>
+                        <label>¿Querés entrenar?</label>
+                        <div class="radio-group">
+                            <label for="entrenar-si">
+                                <input type="radio" name="entrenar" id="entrenar-si" value="si" required>
+                                Sí
+                            </label>
+                            <label for="entrenar-no">
+                                <input type="radio" name="entrenar" id="entrenar-no" value="no">
+                                No
+                            </label>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
                 </div>
-
-                <button type="submit">Enviar</button>
-            </form>
+            </div>
         </section>
 
         <section class="descarga-app">
-            <h2>Descargá la aplicación gratis</h2>
-            <ul>
-                <li><a href="https://apps.apple.com/ar/app" target="_blank">iOS</a></li>
-                <li><a href="https://play.google.com/store/apps/" target="_blank">Android</a></li>
-            </ul>
+            <div class="glass-content">
+                <h2>Descargá la aplicación gratis</h2>
+                <ul>
+                    <li><a href="https://apps.apple.com/ar/app" target="_blank">iOS</a></li>
+                    <li><a href="https://play.google.com/store/apps/" target="_blank">Android</a></li>
+                </ul>
+            </div>
         </section>
     </main>
     <!----------------------------------PIE DE PAGINA-------------------------->
     <footer>
-        <nav>
-            <ul class="footer-navbar">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./comunidad.html">Comunidad</a></li>
-                <li><a href="./actividades.html">Actividades</a></li>
-                <li><a href="./mapa-canchas.html">Mapa de canchas</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="derechos-reservados">
-            <p>Buenos Aires, Argentina.</p>
-            <p>© 2025 Comunidad Aguante y Futbol.</p>
-            <p>Derechos reservados.</p>
+        <div class="glass-content">
+            <nav>
+                <ul class="footer-navbar">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./comunidad.html">Comunidad</a></li>
+                    <li><a href="./actividades.html">Actividades</a></li>
+                    <li><a href="./mapa-canchas.html">Mapa de canchas</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="derechos-reservados">
+                <p>Buenos Aires, Argentina.</p>
+                <p>© 2025 Comunidad Aguante y Futbol.</p>
+                <p>Derechos reservados.</p>
+            </div>
         </div>
     </footer>
     <!-- BOOTSRAP JS -->
