@@ -1,0 +1,65 @@
+/******** MAIN SECTION INDEX **************/
+
+.main-section-container {
+    padding: 80px 50px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    .content-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .text-container {
+        margin-bottom: 10px;
+
+        h1 {
+            text-align: justify;
+            font-size: 80px;
+            color: $primary-color;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 35px;
+            color: $secondary-color;
+            margin-bottom: 20px;
+        }
+
+        /************* ESTILO DE BOTONES DEL INDEX ***********/
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+
+            a {
+                text-decoration: none;
+                list-style: none;
+                font-size: 16px;
+                background-color: #db2b39;
+                padding: 10px 20px;
+                color: #f0f0f0;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            a:hover {
+                transform: scale(1.05);
+                background-color: #020e06;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                transition: all 0.3s ease;
+            }
+        }
+
+    }
+
+}

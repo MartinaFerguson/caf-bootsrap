@@ -1,0 +1,82 @@
+/*********** MAIN CONTACTO ************/
+.contacto-section {
+    padding: 60px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #0f5e51;
+
+    .form-wrapper {
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            color: $primary-color;
+            margin-bottom: 30px;
+        }
+
+        .formulario-contacto {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            input,
+            select {
+                @include input-style;
+            }
+
+            textarea {
+                @include input-style;
+                resize: vertical;
+                min-height: 100px;
+            }
+
+            label {
+                font-weight: bold;
+                margin-bottom: 4px;
+            }
+
+            .radio-group {
+                display: flex;
+                gap: 20px;
+            }
+
+            button[type="submit"] {
+                @include button-style;
+
+                &:hover {
+                    background-color: $primary-hover;
+                }
+            }
+
+            input:invalid,
+            select:invalid,
+            textarea:invalid {
+                border-color: red;
+            }
+        }
+
+        .descarga-app {
+            text-align: center;
+            margin-top: 50px;
+
+            h2 {
+                font-size: 24px;
+                color: #04a777;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            a {
+                color: #592E83;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+}

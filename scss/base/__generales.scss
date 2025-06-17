@@ -1,0 +1,49 @@
+/********** BODY *****************/
+body {
+    font-family: "Chakra Petch", sans-serif;
+    font-style: normal;
+    background-image: url(../images/pelota.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+
+
+    /*******BOOTSRAP NAVBAR ALL PAGES**********/
+    header {
+        .navbar-brand {
+            .titulo-header {
+                font-family: "Chakra Petch", sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                color: #592E83;
+                font-size: 80px;
+                margin: 20px;
+            }
+        }
+    }
+
+    /****** FONDO TRASLÚCIDO ALL SECTIONS & FOOTER ******/
+    .glass-content {
+        background: rgba(255, 255, 255, 0.85);
+        padding: 40px;
+        border-radius: 16px;
+        max-width: 1200px;
+        margin: 0 auto;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    @media (min-width: 768px) {
+        .glass-content {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
