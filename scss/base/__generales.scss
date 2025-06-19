@@ -11,18 +11,40 @@ body {
 
 
     /*******BOOTSRAP NAVBAR ALL PAGES**********/
-    header {
-        .navbar-brand {
+
+    .navbar {
+        &-brand {
             .titulo-header {
                 font-family: "Chakra Petch", sans-serif;
                 font-weight: 600;
                 font-style: normal;
-                color: #592E83;
+                color: #592e83;
                 font-size: 80px;
                 margin: 20px;
             }
         }
+
+        &-collapse {
+            justify-content: flex-end;
+        }
     }
+
+    .navbar-nav {
+        li {
+            .nav-link {
+                color: #ebf1ef;
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+            }
+        }
+    }
+
+    a[aria-current="page"] {
+        color: #50168a !important;
+        font-weight: 800;
+        border-bottom: 2px solid #f2faf8;
+    }
+
 
     /****** FONDO TRASLÚCIDO ALL SECTIONS & FOOTER ******/
     .glass-content {
