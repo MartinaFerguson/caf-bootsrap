@@ -5,30 +5,30 @@ footer {
     gap: 2rem;
 
     .footer-navbar {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
         list-style: none;
         padding: 0;
-        margin-bottom: 1rem;
-        gap: 1rem;
+        margin: 0;
+        display: block;
+        text-align: left;
 
-        a {
-            font-size: 0.9rem;
-            text-decoration: none;
-            color: #030c09;
-            font-weight: 600;
+        li {
+            margin-bottom: 0.5rem;
+            a {
+                font-size: 0.9rem;
+                text-decoration: none;
+                color: #030c09;
+                font-weight: 600;
+            }
         }
-    }
 
-    .derechos-reservados {
-        p {
-            color: #04a777;
-            font-size: 12px;
-            font-weight: 600;
-            margin: 2px 0;
-            text-align: center;
+        .derechos-reservados {
+            p {
+                color: #04a777;
+                font-size: 12px;
+                font-weight: 600;
+                margin: 2px 0;
+                text-align: center;
+            }
         }
     }
 }

@@ -418,22 +418,22 @@ footer {
   gap: 2rem;
 }
 footer .footer-navbar {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
   list-style: none;
   padding: 0;
-  margin-bottom: 1rem;
-  gap: 1rem;
+  margin: 0;
+  display: block;
+  text-align: left;
 }
-footer .footer-navbar a {
+footer .footer-navbar li {
+  margin-bottom: 0.5rem;
+}
+footer .footer-navbar li a {
   font-size: 0.9rem;
   text-decoration: none;
   color: #030c09;
   font-weight: 600;
 }
-footer .derechos-reservados p {
+footer .footer-navbar .derechos-reservados p {
   color: #04a777;
   font-size: 12px;
   font-weight: 600;
