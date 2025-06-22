@@ -34,7 +34,7 @@ body a[aria-current=page] {
   border-bottom: 2px solid #f2faf8;
 }
 body .glass-content {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.411);
   padding: 40px;
   border-radius: 16px;
   max-width: 1200px;
@@ -389,23 +389,23 @@ body .glass-content {
 .contacto-section .form-wrapper .formulario-contacto textarea:invalid {
   border-color: red;
 }
-.contacto-section .form-wrapper .descarga-app {
+.contacto-section .descarga-app {
   text-align: center;
-  margin-top: 50px;
+  margin: 5rem;
 }
-.contacto-section .form-wrapper .descarga-app h2 {
+.contacto-section .descarga-app .glass-content h2 {
   font-size: 24px;
   color: #04a777;
   margin-bottom: 10px;
 }
-.contacto-section .form-wrapper .descarga-app ul {
+.contacto-section .descarga-app .glass-content ul {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-.contacto-section .form-wrapper .descarga-app a {
+.contacto-section .descarga-app .glass-content ul a {
   color: #592E83;
   font-weight: bold;
   text-decoration: none;
